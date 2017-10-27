@@ -1,0 +1,55 @@
+body  {
+    background-image: url("../images/background.jpg");
+    height: 100%;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 20px;
+}
+.header-text {
+  color: #fff;
+  text-align: center;
+}
+
+button#summary {
+    width: 20%;
+}
+.m-buttons {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+.input-group {
+   width: 30%;
+   position: relative;
+   left: 100px;
+   bottom: 30px;
+}
+label.control-label {
+    font-size: 16px;
+    color: #fff;
+}
+form#detail_form {
+    margin-top: 30px;
+}
+#submitID {
+    position: relative;
+    left: 500px;
+    bottom: 240px;
+}
+button#submit {
+  position: relative;
+  left: 200px;
+}
+div#summaryID {
+    text-align: center;
+}
+p#taxamount {
+  color: #fff;
+  font-size: 20px;
+}

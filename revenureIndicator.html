@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Revenue Indicators Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/revenueIndicator.css">
+  <script src="./js/revenueIndicator.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="topnav" id="myTopnav">
+    <h2 class="header-text">Revenue Indicators</h2>
+    </div>
+
+    <div class="m-buttons">
+    <button type="button" id="cip" class="btn btn-default btn-lg" onclick="citizenIncomePredictor(this, 'detail_form')">Citizen Income predictor</button>
+    <button type="button" id="summary" class="btn btn-default btn-lg" onclick="summary(this, 'summaryID')">Summary</button>
+    </div>
+
+<form id="detail_form"  class="hidden">
+    		<label class="control-label">Age</label>
+      	<div class="input-group">
+          		<span class="input-group-addon"><i class="glyphicon glyphicon-modal-window"></i></span>
+    				  <input name="age" id="age" placeholder="please enter your age" class="form-control" type="number">
+      	</div>
+        <label class="control-label">Education</label>
+      	<div class="input-group">
+          		<span class="input-group-addon"><i class="glyphicon glyphicon-modal-window"></i></span>
+    				  <input name="age" id="education" placeholder="please enter education" class="form-control" type="text">
+      	</div>
+        <label class="control-label">Relationship</label>
+      	<div class="input-group">
+          		<span class="input-group-addon"><i class="glyphicon glyphicon-modal-window"></i></span>
+    				  <input name="age" id="relationship" placeholder="please enter relationship" class="form-control" type="text">
+      	</div>
+        <label class="control-label">Capital-gain</label>
+        <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-modal-window"></i></span>
+              <input name="age" id="capitalgain" placeholder="please enter capital-gain" class="form-control" type="number">
+        </div>
+
+        <div>
+        <button type="button" id="submit" class="btn btn-primary btn-lg" onclick="submitclick(this, 'submitID')">Submit</button>
+        </div>
+</form>
+<div  id="submitID" class="hidden">
+    <p><button type="button" id="taxpayable" class="btn btn-default btn-lg" onclick="taxpayable()">Tax Payable</button></p>
+    <p id="taxamount"></p>
+    <p><button type="button" id="purchasepower" class="btn btn-default btn-lg" onclick="purchasepower()">Purchase-Power</button></p>
+    <p id="purchasepower"></p>
+</div>
+
+<div id="summaryID" class="hidden">
+  <img src="./images/summaryreport.jpg" alt="Mountain View">
+</div>
+</div><!-- /.container -->
+</body>
+</html>
